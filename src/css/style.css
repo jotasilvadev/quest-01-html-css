@@ -1,0 +1,95 @@
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-bg);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+.content {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 600px;
+    gap: 40px;
+}
+.content .illustration {
+    max-width: 910px;
+    max-height: 100%;
+}
+
+.content .illustration img {
+    max-width: 100%;
+}
+.content .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    max-height: 100%;
+    margin-top: -40px;
+}
+.content .about .title {
+    color: #ffffff;
+    font-size: 52px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+.content .about .text {
+    color: #ffffff;
+    font-size: 23px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: justify;
+}
+.content .about .btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--primary-bg);
+    background-color: #ffffff;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+}
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.footer i {
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease-in-out
+}
+
+.content .about .btn:hover{
+    background-color: var(--primary-hover);
+    color: #ffffff;    
+}
+.footer i:hover{
+    color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
